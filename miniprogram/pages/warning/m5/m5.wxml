@@ -1,0 +1,23 @@
+<view class='box1'>
+  <view class="title">故障轴承和故障时刻</view>
+</view>
+
+<view style="display:flex;justify-content:center;align-items: center;margin-top:60rpx">
+  <view class="circle">
+    <view class="innerCircle">
+      <view style="color:orange">5_M07_F04</view>
+    </view>
+  </view>
+</view>
+
+<view class="solids-bottom padding-xs flex align-center">
+  <view class="flex-sub text-center">
+    <view class="solid-bottom text-xl padding">
+      <view class="text-black text-bold">
+        <view wx:for='{{info}}' wx:key='index' wx:for-item='a'>
+          {{a.logdate}} {{a.state_detail}}
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

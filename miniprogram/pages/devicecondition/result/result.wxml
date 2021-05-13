@@ -1,0 +1,155 @@
+	<view class="box2">
+		<view class='row'>诊断时间：
+			<text style="font-weight:bold">{{time}}</text>
+		</view>
+	</view>
+	<view class="cu-bar bg-white solid-bottom margin-top">
+		<view class="action">
+			<text class="cuIcon-title text-orange "></text>12组轴承运行情况
+		</view>
+	</view>
+	<view class="cu-bar bg-white solid-bottom margin-top">
+		<view class="content">
+			<text class="cuIcon-tagfill text-red"></text>
+			<text class="text-grey">标签</text>
+		</view>
+		<view class="action">
+			<view class="cu-tag round bg-red light">warning</view>
+			<view class="cu-tag round bg-green light">normal</view>
+		</view>
+	</view>
+	<scroll-view scroll-y="true" class="page {{modalName!=null?'show':''}}" style="height: 75vh">
+		<view class="cu-list  menu {{menuBorder?'sm-border':''}} {{menuCard?'card-menu margin-top':''}}">
+			<view class="cu-item">
+				<view class="content">
+					<image src="/images/logo.png" class="png" mode="aspectFit"></image>
+					<text class="text-grey">1_M01_F10</text>
+				</view>
+				<view class="action">
+					<view class="cu-tag round bg-green light" wx:if='{{currentValues[0]==0}}'>{{currentValues[0]}}</view>
+					<view class="cu-tag round bg-red light" wx:else>{{currentValues[0]}}</view>
+				</view>
+			</view>
+
+			<view class="cu-item">
+				<view class="content">
+					<image src="/images/logo.png" class="png" mode="aspectFit"></image>
+					<text class="text-grey">2_M01_F10</text>
+				</view>
+				<view class="action">
+					<view class="cu-tag round bg-green light" wx:if='{{currentValues[1]==0}}'>{{currentValues[1]}}</view>
+					<view class="cu-tag round bg-red light" wx:else>{{currentValues[1]}}</view>
+				</view>
+			</view>
+
+			<view class="cu-item">
+				<view class="content">
+					<image src="/images/logo.png" class="png" mode="aspectFit"></image>
+					<text class="text-grey">3_M01_F10</text>
+				</view>
+				<view class="action">
+					<view class="cu-tag round bg-green light" wx:if='{{currentValues[2]==0}}'>{{currentValues[2]}}</view>
+					<view class="cu-tag round bg-red light" wx:else>{{currentValues[2]}}</view>
+				</view>
+			</view>
+
+			<view class="cu-item">
+				<view class="content">
+					<image src="/images/logo.png" class="png" mode="aspectFit"></image>
+					<text class="text-grey">4_M01_F10</text>
+				</view>
+				<view class="action">
+					<view class="cu-tag round bg-green light" wx:if='{{currentValues[3]==0}}'>{{currentValues[3]}}</view>
+					<view class="cu-tag round bg-red light" wx:else>{{currentValues[3]}}</view>
+				</view>
+			</view>
+
+			<view class="cu-item">
+				<view class="content">
+					<image src="/images/logo.png" class="png" mode="aspectFit"></image>
+					<text class="text-grey">5_M07_F04</text>
+				</view>
+				<view class="action">
+					<view class="cu-tag round bg-green light" wx:if='{{currentValues[4]==0}}'>{{currentValues[4]}}</view>
+					<view class="cu-tag round bg-red light" wx:else>{{currentValues[4]}}</view>
+				</view>
+			</view>
+
+			<view class="cu-item">
+				<view class="content">
+					<image src="/images/logo.png" class="png" mode="aspectFit"></image>
+					<text class="text-grey">6_M07_F04</text>
+				</view>
+				<view class="action">
+					<view class="cu-tag round bg-green light" wx:if='{{currentValues[5]==0}}'>{{currentValues[5]}}</view>
+					<view class="cu-tag round bg-red light" wx:else>{{currentValues[5]}}</view>
+				</view>
+			</view>
+
+			<view class="cu-item">
+				<view class="content">
+					<image src="/images/logo.png" class="png" mode="aspectFit"></image>
+					<text class="text-grey">7_M07_F04</text>
+				</view>
+				<view class="action">
+					<view class="cu-tag round bg-green light" wx:if='{{currentValues[6]==0}}'>{{currentValues[6]}}</view>
+					<view class="cu-tag round bg-red light" wx:else>{{currentValues[6]}}</view>
+				</view>
+			</view>
+
+			<view class="cu-item">
+				<view class="content">
+					<image src="/images/logo.png" class="png" mode="aspectFit"></image>
+					<text class="text-grey">8_M07_F04</text>
+				</view>
+				<view class="action">
+					<view class="cu-tag round bg-green light" wx:if='{{currentValues[7]==0}}'>{{currentValues[7]}}</view>
+					<view class="cu-tag round bg-red light" wx:else>{{currentValues[7]}}</view>
+				</view>
+			</view>
+
+			<view class="cu-item">
+				<view class="content">
+					<image src="/images/logo.png" class="png" mode="aspectFit"></image>
+					<text class="text-grey">9_M07_F10</text>
+				</view>
+				<view class="action">
+					<view class="cu-tag round bg-green light" wx:if='{{currentValues[8]==0}}'>{{currentValues[8]}}</view>
+					<view class="cu-tag round bg-red light" wx:else>{{currentValues[8]}}</view>
+				</view>
+			</view>
+
+			<view class="cu-item">
+				<view class="content">
+					<image src="/images/logo.png" class="png" mode="aspectFit"></image>
+					<text class="text-grey">10_M07_F10</text>
+				</view>
+				<view class="action">
+					<view class="cu-tag round bg-green light" wx:if='{{currentValues[9]==0}}'>{{currentValues[9]}}</view>
+					<view class="cu-tag round bg-red light" wx:else>{{currentValues[9]}}</view>
+				</view>
+			</view>
+
+			<view class="cu-item">
+				<view class="content">
+					<image src="/images/logo.png" class="png" mode="aspectFit"></image>
+					<text class="text-grey">11_M07_F10</text>
+				</view>
+				<view class="action">
+					<view class="cu-tag round bg-green light" wx:if='{{currentValues[10]==0}}'>{{currentValues[10]}}</view>
+					<view class="cu-tag round bg-red light" wx:else>{{currentValues[10]}}</view>
+				</view>
+			</view>
+
+			<view class="cu-item">
+				<view class="content">
+					<image src="/images/logo.png" class="png" mode="aspectFit"></image>
+					<text class="text-grey">12_M07_F10</text>
+				</view>
+				<view class="action">
+					<view class="cu-tag round bg-green light" wx:if='{{currentValues[11]==0}}'>{{currentValues[11]}}</view>
+					<view class="cu-tag round bg-red light" wx:else>{{currentValues[11]}}</view>
+				</view>
+			</view>
+		</view>
+	</scroll-view>

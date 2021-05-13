@@ -1,0 +1,12 @@
+
+<view class='box1'>
+  <view class="title">故障轴承和故障时刻</view>
+</view>
+
+<view style="display:flex;justify-content:center;align-items: center;margin-top:60rpx">
+  <view class="circle">
+    <view class="innerCircle">
+      <view style="color:orange">2_M01_F10</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/devicecondition/index",
+    "pages/devicecondition/result/result",
+    "pages/devicecondition/classify2/classify2",
+    "pages/reportforms/index",
+    "pages/warning/warning",
+    "pages/warning/m1/m1",
+    "pages/warning/m2/m2",
+    "pages/warning/m5/m5",
+    "pages/warning/m9/m9"
+
+  ],
+  "window": {
+    "backgroundColor": "#ff9700",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor":"#66ccff",
+    "navigationBarTitleText": "轴承运行监测",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/devicecondition/index",
+        "text": "工况",
+        "iconPath": "images/电脑.png",
+        "selectedIconPath": "images/数据.png"
+      },
+      {
+        "pagePath": "pages/warning/warning",
+        "text": "警告",
+        "iconPath": "images/warning.png",
+        "selectedIconPath": "images/warning2.png"
+      },
+      {
+        "pagePath": "pages/reportforms/index",
+        "text": "本周报表",
+        "iconPath": "images/标签.png",
+        "selectedIconPath": "images/表单.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

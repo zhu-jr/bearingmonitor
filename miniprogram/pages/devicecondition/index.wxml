@@ -1,0 +1,5 @@
+<!--index.wxml-->
+<view class="container">
+	<image src="bearingdemo.jpeg" style="width:100%"></image>
+	<button bindtap="navToPre" class='button'>点击查看轴承运行情况</button>
+</view>

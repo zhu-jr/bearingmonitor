@@ -1,0 +1,17 @@
+/* pages/devicecondition/classify2/classify2.wxss */
+.table {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.container{
+  width:100%;
+}
+page {
+  background: white;}

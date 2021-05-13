@@ -1,0 +1,37 @@
+<view class="container">
+	<image src="bearingdemo2.jpeg" style="width:100%"></image>
+</view>
+<view class="cu-bar bg-white solid-bottom">
+	<view class="action">
+		<text class="cuIcon-title text-blue"></text>预处理&特征提取
+	</view>
+	{{preprocessStatus}}
+</view>
+<view class="padding bg-white ">
+	<view class="flex">
+		<view class="cu-progress round">
+			<view class="bg-green" style="width:{{loading?pnu:''}};"></view>
+		</view>
+    <text class="margin-left" wx:if="{{preprocessStatus!='完成'}}">{{pnu}}</text>
+		<text class="cuIcon-roundcheckfill text-green margin-left-sm" wx:else></text>
+	</view>
+</view>
+<view class="cu-bar bg-white solid-bottom margin-top">
+	<view class="action">
+		<text class="cuIcon-title text-blue"></text>分类
+	</view>
+	{{classificationStatus}}
+</view>
+<view class="padding bg-white ">
+	<view class="flex">
+		<view class="cu-progress round">
+			<view class="bg-green" style="width:{{loading?cnu:''}};"></view>
+		</view>
+    <text class="margin-left" wx:if="{{classificationStatus!='完成'}}">{{cnu}}</text>
+		<text class="cuIcon-roundcheckfill text-green margin-left-sm" wx:else></text>
+	</view>
+</view>
+<view class="cu-bar bg-white solid-bottom margin-top">
+	<button class="cu-btn bg-green shadow" bindtap="onSubmitTouched" wx:if="{{startedProcessing}}" disabled>提交</button>
+  <button class="cu-btn bg-green shadow" bindtap="onSubmitTouched" wx:else>提交</button>
+</view>

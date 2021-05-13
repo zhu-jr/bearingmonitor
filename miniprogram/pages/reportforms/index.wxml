@@ -1,0 +1,37 @@
+<!-- <view class='backview'>
+	<image class='blackImage' src='../../images/背景.jpeg'></image>
+</view> -->
+<view class="cu-bar bg-white solid-bottom margin-top">
+	<view class="action">
+		<text class="cuIcon-title text-red "></text>本周监测到问题轴承：1号轴承、9号轴承
+	</view>
+</view>
+<view class="cu-bar bg-white solid-bottom margin-top">
+	<view class="section">
+		<picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+			<view class='gkContentBox'>
+				<view class="gkTitle">当前轴承</view>
+				<view class="gkTitle">诊断次数</view>
+				<view class="gkTitle">故障次数</view>
+				<view class="gkTitle">故障率</view>
+			</view>
+			<view class='gkContentBox'>
+				<view class="gkContent" style="color:#237ab7;font-weight:bold;font-size:18px">{{array[index]}}</view>
+				<view class="gkContent" style="color:green">50</view>
+				<view class="gkContent">
+					<text style="color:orange">{{result[index]}}</text>
+				</view>
+				<view class="gkContent" style="color:red">{{result2[index]}}</view>
+			</view>
+		</picker>
+	</view>
+</view>
+<view class="cu-bar bg-white solid-bottom margin-top">
+	<view class="action">
+		<text class="cuIcon-title text-red "></text>12组轴承故障次数统计
+	</view>
+</view>
+
+<view class="echartContainer">
+	<ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec }}"></ec-canvas>
+</view>

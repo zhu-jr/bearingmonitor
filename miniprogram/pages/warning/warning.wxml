@@ -1,0 +1,160 @@
+<view class='box1'>
+	<view class="title">故障轴承</view>
+</view>
+<view class="page {{modalName!=null?'show':''}}">
+	<view class="cu-list  menu {{menuBorder?'sm-border':''}} {{menuCard?'card-menu margin-top':''}}">
+
+		<view class="cu-item">
+			<view>
+				<button wx:if="{{logsSome[1]}}" size="mini" type="warn" bindtap='GotoM1' id='1'>1_M01_F10</button>
+				<button wx:else size="mini" type="primary" bindtap='GotoM1' id='1'>1_M01_F10</button>
+			</view>
+
+			<view class="action">
+				<view class="cu-tag round bg-red light" wx:if='{{logsSome[1]}}'>2</view>
+				<view class="cu-tag round bg-green light" wx:else>{{currentValues[0]}}</view>
+			</view>
+		</view>
+
+		<view class="cu-item">
+			<view wx:if='{{currentValues[1]!=0}}'>
+				<navigator url="../warning/m2/m2">
+					<button size="mini" type="warn">2_M01_F10</button></navigator>
+			</view>
+			<view wx:else='{{currentValues[1]==0}}'>
+				<button size="mini" type="primary">2_M01_F10</button>
+			</view>
+			<view class="action">
+				<view class="cu-tag round bg-green light" wx:if='{{currentValues[1]==0}}'>{{currentValues[1]}}</view>
+				<view class="cu-tag round bg-red light" wx:else>{{currentValues[1]}}</view>
+			</view>
+		</view>
+
+		<view class="cu-item">
+			<view wx:if='{{currentValues[2]!=0}}'>
+					<button size="mini" type="warn">3_M01_F10</button>
+			</view>
+			<view wx:else='{{currentValues[2]==0}}'>
+				<button size="mini" type="primary">3_M01_F10</button>
+			</view>
+			<view class="action">
+				<view class="cu-tag round bg-green light" wx:if='{{currentValues[2]==0}}'>{{currentValues[2]}}</view>
+				<view class="cu-tag round bg-red light" wx:else>{{currentValues[2]}}</view>
+			</view>
+		</view>
+
+		<view class="cu-item">
+			<view wx:if='{{currentValues[3]!=0}}'>
+					<button size="mini" type="warn">4_M01_F10</button>
+			</view>
+			<view wx:else='{{currentValues[3]==0}}'>
+				<button size="mini" type="primary">4_M01_F10</button>
+			</view>
+			<view class="action">
+				<view class="cu-tag round bg-green light" wx:if='{{currentValues[3]==0}}'>{{currentValues[3]}}</view>
+				<view class="cu-tag round bg-red light" wx:else>{{currentValues[3]}}</view>
+			</view>
+		</view>
+
+		<view class="cu-item">
+			<view>
+					<button wx:if="{{logsSome[5]}}" size="mini" type="warn" bindtap='GotoM1' id='5'>5_M07_F04</button>
+				<button wx:else size="mini" type="primary" bindtap='GotoM5' id='5'>5_M07_F04</button>
+			</view>
+			<view class="action">
+				<view class="cu-tag round bg-red light" wx:if='{{logsSome[5]}}'>{{currentValues[4]}}</view>
+				<view class="cu-tag round bg-green light" wx:else>{{currentValues[4]}}</view>
+			</view>
+		</view>
+
+		<view class="cu-item">
+			<view wx:if='{{currentValues[5]!=0}}'>
+					<button size="mini" type="warn">6_M07_F04</button>
+			</view>
+			<view wx:else='{{currentValues[5]==0}}'>
+				<button size="mini" type="primary">6_M07_F04</button>
+			</view>
+			<view class="action">
+				<view class="cu-tag round bg-green light" wx:if='{{currentValues[5]==0}}'>{{currentValues[5]}}</view>
+				<view class="cu-tag round bg-red light" wx:else>{{currentValues[5]}}</view>
+			</view>
+		</view>
+
+		<view class="cu-item">
+			<view wx:if='{{currentValues[6]!=0}}'>
+					<button size="mini" type="warn">7_M07_F04</button>
+			</view>
+			<view wx:else='{{currentValues[6]==0}}'>
+				<button size="mini" type="primary">7_M07_F04</button>
+			</view>
+			<view class="action">
+				<view class="cu-tag round bg-green light" wx:if='{{currentValues[6]==0}}'>{{currentValues[6]}}</view>
+				<view class="cu-tag round bg-red light" wx:else>{{currentValues[6]}}</view>
+			</view>
+		</view>
+
+		<view class="cu-item">
+			<view wx:if='{{currentValues[7]!=0}}'>
+					<button size="mini" type="warn">8_M07_F04</button>
+			</view>
+			<view wx:else='{{currentValues[7]==0}}'>
+				<button size="mini" type="primary">8_M07_F04</button>
+			</view>
+			<view class="action">
+				<view class="cu-tag round bg-green light" wx:if='{{currentValues[7]==0}}'>{{currentValues[7]}}</view>
+				<view class="cu-tag round bg-red light" wx:else>{{currentValues[7]}}</view>
+			</view>
+		</view>
+
+		<view class="cu-item">
+			<view>
+				<button wx:if="{{logsSome[9]}}" size="mini" type="warn" bindtap='GotoM9' id="9">9_M07_F10</button>
+				<button wx:else size="mini" type="primary" bindtap='GotoM9' id="9">9_M01_F10</button>
+			</view>
+			<view class="action">
+				<view class="cu-tag round bg-red light" wx:if='{{logsSome[9]}}'>2</view>
+				<view class="cu-tag round bg-green light" wx:else>{{currentValues[8]}}</view>
+			</view>
+		</view>
+
+		<view class="cu-item">
+			<view wx:if='{{currentValues[9]!=0}}'>
+					<button size="mini" type="warn">10_M07_F10</button>
+			</view>
+			<view wx:else='{{currentValues[9]==0}}'>
+				<button size="mini" type="primary">10_M07_F10</button>
+			</view>
+			<view class="action">
+				<view class="cu-tag round bg-green light" wx:if='{{currentValues[9]==0}}'>{{currentValues[9]}}</view>
+				<view class="cu-tag round bg-red light" wx:else>{{currentValues[9]}}</view>
+			</view>
+		</view>
+
+		<view class="cu-item">
+			<view wx:if='{{currentValues[10]!=0}}'>
+				<button size="mini" type="warn">11_M07_F10</button>
+			</view>
+			<view wx:else='{{currentValues[10]==0}}'>
+				<button size="mini" type="primary">11_M07_F10</button>
+			</view>
+			<view class="action">
+				<view class="cu-tag round bg-green light" wx:if='{{currentValues[10]==0}}'>{{currentValues[10]}}</view>
+				<view class="cu-tag round bg-red light" wx:else>{{currentValues[10]}}</view>
+			</view>
+		</view>
+
+		<view class="cu-item">
+			<view wx:if='{{currentValues[11]!=0}}'>
+				<button size="mini" type="warn">12_M07_F10</button>
+			</view>
+			<view wx:else='{{currentValues[11]==0}}'>
+				<button size="mini" type="primary">12_M07_F10</button>
+			</view>
+			<view class="action">
+				<view class="cu-tag round bg-green light" wx:if='{{currentValues[11]==0}}'>{{currentValues[11]}}</view>
+				<view class="cu-tag round bg-red light" wx:else>{{currentValues[11]}}</view>
+			</view>
+		</view>
+
+	</view>
+</view>
